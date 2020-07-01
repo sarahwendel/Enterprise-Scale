@@ -1,0 +1,28 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/Prod",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "Prod",
+        "TenantId": "db91dfa4-c525-4e8d-8ddc-1c03c00fa95e",
+        "DisplayName": "Prod",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/db91dfa4-c525-4e8d-8ddc-1c03c00fa95e",
+        "ParentName": "db91dfa4-c525-4e8d-8ddc-1c03c00fa95e",
+        "ParentDisplayName": "Tenant Root Group",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}
