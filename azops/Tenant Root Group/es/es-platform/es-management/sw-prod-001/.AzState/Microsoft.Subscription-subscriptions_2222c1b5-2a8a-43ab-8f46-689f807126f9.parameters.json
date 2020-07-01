@@ -1,0 +1,69 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/2222c1b5-2a8a-43ab-8f46-689f807126f9",
+        "Name": "2222c1b5-2a8a-43ab-8f46-689f807126f9",
+        "DisplayName": "sw-prod-001",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "DataProtectionSecurityCenter",
+              "ResourceId": "/subscriptions/2222c1b5-2a8a-43ab-8f46-689f807126f9/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
+              "ResourceName": "DataProtectionSecurityCenter",
+              "ResourceGroupName": null,
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "SubscriptionId": "2222c1b5-2a8a-43ab-8f46-689f807126f9",
+              "Sku": {
+                "name": "A1",
+                "tier": "Standard"
+              },
+              "PolicyAssignmentId": "/subscriptions/2222c1b5-2a8a-43ab-8f46-689f807126f9/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
+              "Properties": {
+                "Scope": "/subscriptions/2222c1b5-2a8a-43ab-8f46-689f807126f9",
+                "NotScopes": null,
+                "DisplayName": "ASC DataProtection (subscription: 2222c1b5-2a8a-43ab-8f46-689f807126f9)",
+                "Description": "This policy assignment was automatically created by Azure Security Center",
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/9cb3cc7a-b39b-4b82-bc89-e5a5d9ff7b97",
+                "Parameters": null
+              }
+            },
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "SecurityCenterBuiltIn",
+              "ResourceId": "/subscriptions/2222c1b5-2a8a-43ab-8f46-689f807126f9/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
+              "ResourceName": "SecurityCenterBuiltIn",
+              "ResourceGroupName": null,
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "SubscriptionId": "2222c1b5-2a8a-43ab-8f46-689f807126f9",
+              "Sku": {
+                "name": "A1",
+                "tier": "Standard"
+              },
+              "PolicyAssignmentId": "/subscriptions/2222c1b5-2a8a-43ab-8f46-689f807126f9/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
+              "Properties": {
+                "Scope": "/subscriptions/2222c1b5-2a8a-43ab-8f46-689f807126f9",
+                "NotScopes": null,
+                "DisplayName": "ASC Default (subscription: 2222c1b5-2a8a-43ab-8f46-689f807126f9)",
+                "Description": "This is the default set of policies monitored by Azure Security Center. It was automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information please visit https://aka.ms/ascpolicies",
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+                "Parameters": {}
+              }
+            }
+          ],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}

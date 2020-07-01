@@ -1,0 +1,131 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/db91dfa4-c525-4e8d-8ddc-1c03c00fa95e",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "db91dfa4-c525-4e8d-8ddc-1c03c00fa95e",
+        "TenantId": "db91dfa4-c525-4e8d-8ddc-1c03c00fa95e",
+        "DisplayName": "Tenant Root Group",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": null,
+        "ParentName": null,
+        "ParentDisplayName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/Prod",
+            "Name": "Prod",
+            "DisplayName": "Prod",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/Non-Prod",
+            "Name": "Non-Prod",
+            "DisplayName": "Non-Prod",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/es",
+            "Name": "es",
+            "DisplayName": "es",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-sandboxes",
+                "Name": "es-sandboxes",
+                "DisplayName": "es-sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-landingzones",
+                "Name": "es-landingzones",
+                "DisplayName": "es-Landing Zones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/es-sap",
+                    "Name": "es-sap",
+                    "DisplayName": "es-sap",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/es-online",
+                    "Name": "es-online",
+                    "DisplayName": "es-online",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/es-corp",
+                    "Name": "es-corp",
+                    "DisplayName": "es-corp",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-platform",
+                "Name": "es-platform",
+                "DisplayName": "es-platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/es-management",
+                    "Name": "es-management",
+                    "DisplayName": "es-management",
+                    "Children": [
+                      {
+                        "Type": "/subscriptions",
+                        "Id": "/subscriptions/2222c1b5-2a8a-43ab-8f46-689f807126f9",
+                        "Name": "2222c1b5-2a8a-43ab-8f46-689f807126f9",
+                        "DisplayName": "sw-prod-001",
+                        "Children": null
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/es-identity",
+                    "Name": "es-identity",
+                    "DisplayName": "es-identity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/es-connectivity",
+                    "Name": "es-connectivity",
+                    "DisplayName": "es-connectivity",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-decomissioned",
+                "Name": "es-decomissioned",
+                "DisplayName": "es-decomissioned",
+                "Children": null
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}

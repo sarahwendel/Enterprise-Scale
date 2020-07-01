@@ -1,0 +1,51 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "SystemAssigned",
+          "principalId": "83b13ea2-188b-4d13-b2f4-275e1da5240c",
+          "tenantId": "db91dfa4-c525-4e8d-8ddc-1c03c00fa95e"
+        },
+        "Location": "northeurope",
+        "Name": "Deploy-Log-Analytics",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/es-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "ResourceName": "Deploy-Log-Analytics",
+        "ResourceGroupName": null,
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "SubscriptionId": null,
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        },
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/es-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "Properties": {
+          "Scope": "/providers/Microsoft.Management/managementGroups/es-management",
+          "NotScopes": null,
+          "DisplayName": "Deploy-Log-Analytics",
+          "Description": "Deploy-Log-Analytics",
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+          "Parameters": {
+            "workspaceName": {
+              "value": "es-la-2222c1b5-2a8a-43ab-8f46-689f807126f9"
+            },
+            "automationAccountName": {
+              "value": "es-a-2222c1b5-2a8a-43ab-8f46-689f807126f9"
+            },
+            "workspaceRegion": {
+              "value": "northeurope"
+            },
+            "automationRegion": {
+              "value": "northeurope"
+            },
+            "rgName": {
+              "value": "es-mgmt"
+            }
+          }
+        }
+      }
+    }
+  }
+}
